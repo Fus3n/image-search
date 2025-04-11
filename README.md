@@ -2,6 +2,11 @@
 
 A desktop application for searching similar images using vector embeddings and neural networks.
 
+<p align="center">
+  <img src="images/screenshot-home.png" alt="Screenshot of the ImageSearch application" style="border-radius: 10px; width:80%;"/>
+</p>
+
+
 ## Project Overview
 
 This application allows users to:
