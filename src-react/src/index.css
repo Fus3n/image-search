@@ -1,0 +1,71 @@
+
+@import "tailwindcss";
+
+body {
+  @apply bg-gray-950 text-gray-100;
+    
+}
+
+@theme {
+  --font-open-sans: "Open Sans", "sans-serif"; 
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+.animate-slide-in {
+    animation: slide-in 0.35s ease-out forwards;
+}
+
+.animate-slide-out {
+    animation: slide-out 0.35s ease-in forwards;
+}
+
+.sidebar-hidden {
+    transform: translateX(100%);
+}
+
+.overscroll-none {
+  overscroll-behavior: none;
+}
+
+/* Custom Scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(31, 31, 36, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(82, 82, 91, 0.5);
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(113, 113, 122, 0.8);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(82, 82, 91, 0.5) rgba(31, 31, 36, 0.5);
+}

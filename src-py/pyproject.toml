@@ -1,0 +1,17 @@
+[project]
+name = "img2img-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "bs4>=0.0.2",
+    "chromadb>=1.0.4",
+    "numpy>=2.2.4",
+    "opencv-python>=4.11.0.86",
+    "pillow>=11.1.0",
+    "pywebview>=5.4",
+    "sentence-transformers>=4.0.1",
+]
+
+
